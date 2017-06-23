@@ -21,7 +21,7 @@ sudo make install
 cd ..
 ```
 
-Build llvm+clang and install into `/../llvm+clang-4.0.0-ubuntu-14.04.5-x86_64`
+Build llvm+clang and install into `/../llvm-clang-4.0.0-ubuntu-14.04.5-x86_64`
 
 ```
 wget http://releases.llvm.org/4.0.0/llvm-4.0.0.src.tar.xz
@@ -42,7 +42,7 @@ cmake ../llvm-4.0.0.src -G "Unix Makefiles" \
   -DLLVM_ENABLE_RTTI=ON \
   -DCMAKE_C_COMPILER=gcc -DCMAKE_CXX_COMPILER=g++ \
   -DCMAKE_CXX_FLAGS=-std=c++11 \
-  -DCMAKE_INSTALL_PREFIX=`pwd`/../llvm+clang-4.0.0-ubuntu-14.04.5-x86_64 \
+  -DCMAKE_INSTALL_PREFIX=`pwd`/../llvm-clang-4.0.0-ubuntu-14.04.5-x86_64 \
   -DBUILD_SHARED_LIBS=OFF
 make
 make install
@@ -52,6 +52,6 @@ cd ..
 Compress and archive the result of the build:
 
 ```
-tar c llvm+clang-4.0.0-ubuntu-14.04.5-x86_64 | xz > llvm+clang-4.0.0-ubuntu-14.04.5-x86_64.tar.xz
+tar c llvm-clang-4.0.0-ubuntu-14.04.5-x86_64 | xz > llvm-clang-4.0.0-ubuntu-14.04.5-x86_64.tar.xz
 ```
 
