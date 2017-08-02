@@ -90,6 +90,7 @@ cmake ../llvm-4.0.0.src -G "Unix Makefiles" \
   -DLLVM_ENABLE_RTTI=ON \
   -DCMAKE_C_COMPILER=gcc -DCMAKE_CXX_COMPILER=g++ \
   -DCMAKE_CXX_FLAGS="-std=c++11 -mmacosx-version-min=10.9" \
+  -DCMAKE_C_FLAGS="-mmacosx-version-min=10.9" \
   -DCMAKE_INSTALL_PREFIX=`pwd`/../llvm-clang-4.0.0-macosx-10.9-x86_64 \
   -DBUILD_SHARED_LIBS=OFF
 make
